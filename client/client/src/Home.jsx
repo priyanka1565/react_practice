@@ -1,4 +1,5 @@
 import React from "react";
+import FeatureProduct from "./components/FeatureProduct";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
@@ -12,10 +13,12 @@ const Home = () => {
   
   return (
     <div>
-      <HeroSection myData={data} />;
+      <HeroSection myData={data} />
+      <FeatureProduct/>
+
       <Services />
     <Trusted/>
-     <Footer/>
+    
     </div>
   );
   
