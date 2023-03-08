@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
-import { useProductContext } from "./context/productcontext";
-import PageNavigation from "./components/PageNavigation";
-import MyImage from "./components/MyImage";
-import { Container } from "./styles/Container";
-import FormatPrice from "./Helpers/FormatPrice";
+import { useProductContext } from "../context/productcontext";
+import PageNavigation from "../components/PageNavigation"
+import MyImage from "./MyImage";
+import { Container } from "../styles/Container";
+import FormatPrice from "../Helpers/FormatPrice";
 import { MdSecurity } from "react-icons/md";
 import { TbTruckDelivery, TbReplace } from "react-icons/tb";
-import Star from "./components/Star";
-import AddToCart from "./components/AddToCart";
+import Star from "./Star";
+import AddToCart from "./AddToCart";
 
 const API = "https://api.pujakaitem.com/api/products";
 
@@ -112,19 +112,16 @@ const Wrapper = styled.section`
   .container {
     padding: 9rem 0;
   }
-
   .product_images {
     display: flex;
     align-items: center;
   }
-
   .product-data {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-
     .product-data-warranty {
       width: 100%;
       display: flex;
@@ -132,10 +129,8 @@ const Wrapper = styled.section`
       align-items: center;
       border-bottom: 1px solid #ccc;
       margin-bottom: 1rem;
-
       .product-warranty-data {
         text-align: center;
-
         .warranty-icon {
           background-color: rgba(220, 220, 220, 0.5);
           border-radius: 50%;
@@ -149,7 +144,6 @@ const Wrapper = styled.section`
         }
       }
     }
-
     .product-data-price {
       font-weight: bold;
     }
@@ -161,12 +155,10 @@ const Wrapper = styled.section`
       flex-direction: column;
       gap: 1rem;
       font-size: 1.8rem;
-
       span {
         font-weight: bold;
       }
     }
-
     hr {
       max-width: 100%;
       width: 90%;
@@ -175,13 +167,11 @@ const Wrapper = styled.section`
       color: red;
     }
   }
-
   .product-images {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .page_loading {
     font-size: 3.2rem;
     display: flex;

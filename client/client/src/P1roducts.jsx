@@ -2,8 +2,8 @@ import styled from "styled-components";
 import FilterSection from "./components/FilterSection";
 import ProductList from "./components/ProductList";
 import Sort from "./components/Sort";
-//import { useFilterContext } from "./context/filter_context";
-import { useFilterContext } from "./context/filterContext";
+import { useFilterContext } from "./context/filter_context";
+
 const Products = () => {
   return (
     <Wrapper>
@@ -29,7 +29,6 @@ const Wrapper = styled.section`
   .grid-filter-column {
     grid-template-columns: 0.2fr 1fr;
   }
-
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .grid-filter-column {
       grid-template-columns: 1fr;
